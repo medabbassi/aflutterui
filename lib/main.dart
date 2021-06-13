@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.recommend, color: Colors.black),
+        leading: Icon(Icons.pending_actions, color: Colors.black),
         title: Text(
           " HOME \u{1F44B}",
           style: TextStyle(color: Colors.black),
@@ -72,6 +72,16 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.white10,
         elevation: 0.0,
         centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            onPressed: () {},
+            icon: new Image.asset(
+              "assets/images/hello.jpg",
+              width: 30,
+              height: 30,
+            ),
+          )
+        ],
       ),
     );
   }
