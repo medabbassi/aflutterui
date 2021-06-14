@@ -83,6 +83,34 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
+      body: Center(
+          child: Padding(
+        padding: EdgeInsets.fromLTRB(10.0, 20.0, 5.0, 0.0),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Hello ! ",
+                  style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.black),
+                ),
+                Text(
+                  "John Doe  ",
+                  style: TextStyle(
+                      fontSize: 32.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
+                ),
+              ],
+            ),
+          ],
+        ),
+      )),
     );
   }
 }
